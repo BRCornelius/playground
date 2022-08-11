@@ -1,0 +1,10 @@
+<%= render "home/router" %>
+<h1>Lego Page</h1>
+<ul>
+  <% @lego_sets.each do |set| %>
+    <li>
+      <%= set.title %><br />
+      <%= set.url %>
+    </li>
+  <% end %>
+</ul>
